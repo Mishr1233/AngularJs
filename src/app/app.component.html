@@ -1,0 +1,20 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<div>
+  <h1>{{this.userName}} from BridgeLabz</h1>
+  <img [src]="imgUrl" (click)="onClick($event)"
+  alt="The BridggeLabz logo: aBridge to Employment through a Lab works."
+  />
+</div>
+
+<div>
+  <input [(ngModel)]="userName" /> <br/> <br/>
+</div>
+<router-outlet></router-outlet>

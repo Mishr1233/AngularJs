@@ -17,6 +17,7 @@ export class AppComponent {
     this.title = "Hello from BridgeLabz.";
   }
 
+  //click event function
   onClick($event: any) {
     console.log("Save button is clicked!", $event);
     window.open(this.imgUrl, "_blank");

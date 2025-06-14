@@ -1,0 +1,25 @@
+Generate Angular components for Sign Up and Sign In functionality using reactive forms and backend API integration.
+
+For the Sign Up page (`SignupComponent`):
+- Fields: name, username, password, email, mobile, address
+- Use `FormBuilder` and `Validators` to enforce:
+  - All fields required
+  - Password must be at least 6 characters
+  - Email should be valid
+- Display error messages for invalid fields
+- On form submission, make an HTTP POST call to `/api/auth/signup` and show a success or error message in the console or using `alert()`
+
+For the Sign In page (`SigninComponent`):
+- Fields: username and password
+- Use reactive forms and required validators
+- Display error messages for invalid fields
+- On form submission, make an HTTP POST call to `/api/auth/signin`
+- If login is successful, show a success message and optionally store the response token using `localStorage.setItem('token', response.token)`
+- If login fails, show an error message
+
+Also:
+- Configure `HttpClientModule` in `AppModule`
+- Create an `AuthService` to handle API calls for sign in and sign up (methods: `register()` and `login()`)
+- Add routing for `/signup` and `/signin` in `AppRoutingModule`
+- Add both components in `AppModule`
+- Include basic CSS to style forms
